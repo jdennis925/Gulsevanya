@@ -1,0 +1,17 @@
+<h2>Open Lobbies:</h2>
+<table class="table">
+  <tr>
+    <th>Name</th>
+    <th>Owner</th>
+    <th></th>
+  </tr>
+  <tr *ngFor="let item of LobbyItems">
+      <th>{{item.Name}}</th> 
+      <th>{{item.Owner}}</th>
+      <th>
+          <button type="submit" class="btn btn-success">
+              Join
+          </button>
+      </th>
+  </tr>
+  </table>
