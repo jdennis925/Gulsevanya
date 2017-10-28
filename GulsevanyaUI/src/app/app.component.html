@@ -1,5 +1,29 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Auth0 - Angular</a>
+  
+        <button
+          class="btn btn-primary btn-margin"
+          *ngIf="!auth.isAuthenticated()"
+          (click)="auth.login()">
+            Log In
+        </button>
+  
+        <button
+          class="btn btn-primary btn-margin"
+          *ngIf="auth.isAuthenticated()"
+          (click)="auth.logout()">
+            Log Out
+        </button>
+  
+      </div>
+    </div>
+  </nav>
+  
+
   <h1>
     Gulsevanya!
   </h1>
